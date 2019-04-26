@@ -2,12 +2,12 @@
 
 Web application that features three machine learning applications.
 
-###NLP for query matching.
+### NLP for query matching.
 
 Information retrieval system implementing an TFIDF model and using cosine similarity to match
 movie queries with the items available in the database.
 
-###Recommender system for movies.
+### Recommender system for movies.
 
 Users register into the application and rate movies that internally helps 
 a Colaborative Filtering Item-Based model (and optionally a LogLikelihood 
@@ -15,18 +15,18 @@ model) to learn users’ preferences.
 The system updates automatically the model and gives recommendations to 
 other users.
 
-###Bayesian A/B testing for banners.
+### Bayesian A/B testing for banners.
 
 A module was developed to test the popularity of a series of banners.
 An A/B test is performed using a Bernoulli model that is updated after each user click on a banner
 and their display frequencies change depending on the state of the model.
 
 
-####-Framework details.
+#### -Framework details.
 
 This engine is written in Python, Scikit-Learn on top of NumPy and SciPy stack. It uses Django for webserver backend.
 
-##Screenshots
+## Screenshots
 
 Users log in into the system and can perform queries searching for movies based on their title, actors, descriptions etc.
 
