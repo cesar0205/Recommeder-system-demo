@@ -48,7 +48,7 @@ the user's preferences.
 ![Recommender System](recommender4.png)  
 
 In the upper location of the page a banner is displayed and it is loaded each time the user refreshes the page or performs a search.
-When the user clicks on the banner and a A/B test is performed internally
+When the user clicks on the banner an A/B test is performed internally
 to display the banners based on their popularity. The next three banners are displayed. 
 
 ![Banner A/B test](recommender5.png) 
