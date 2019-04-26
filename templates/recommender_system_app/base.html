@@ -57,19 +57,10 @@
                   <div class="nav-collapse">
     	                <ul class="nav">
     	                  <li class="active"><a href="/">Home</a></li>
-    	                  <li class=""><a href="/movies-recs">Recommendations</a></li>
+    	                  <li class=""><a href="/movies-recs">Get Recommendations</a></li>
 
     	                </ul>
                   </div>
-	              <div>
-		                <form class="navbar-search pull-left" action="{% url 'home' %}" method="POST">
-		                  {% csrf_token %}
-		                   <div style="overflow: hidden; padding-right: .5em;">
-		                     <input type="text" name="data" style="width: 70%;" />
-		                     <input type="submit" name="search" value="search" size="30" style="float: right" />
-		                    </div>
-		                </form>
-	             </div>
 
                {% if user.is_authenticated %}
                 <form class="navbar-search pull-right" action="{% url 'home' %}" method="GET">

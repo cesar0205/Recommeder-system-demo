@@ -16,7 +16,7 @@ from nltk.stem.porter import PorterStemmer
 
 stemmer = PorterStemmer();
 from sklearn.feature_extraction.text import TfidfVectorizer
-from movie_recommender_app.models import MovieData
+from recommender_system_app.models import MovieData
 from django.core.cache import cache
 
 

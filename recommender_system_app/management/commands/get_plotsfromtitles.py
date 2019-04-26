@@ -43,7 +43,8 @@ class Command(BaseCommand):
         title = original_title[:-6].strip();
         year = original_title[-5:-1];
         #Add a dot at the end of the movie
-        plot = ' '.join(title.split(' ')).encode('ascii', 'ignore') + '. '.encode('ascii', 'ignore') #To binary string
+        #print("Title", title, "Year", year)
+        plot = ' '.join(title.split(' ')) + '. '
 
         url = "http://www.omdbapi.com/?t=" + title + "&y" + year + "&plot=full&r=json" + "&apikey=bb9d0462"
 
@@ -53,7 +54,8 @@ class Command(BaseCommand):
         if('Plot' in jsondata): #if the movie was found in the omdb;
 
             #Store plot + title
-            plot += jsondata['Plot'].encode('ascii', 'ignore');
+            plot += jsondata['Plot']
+            #print(plot)
 
         if plot != None and plot != '' and plot!= np.nan and len(plot)>3:
             df_moviesplots.loc[len(df_moviesplots)] = [original_title, plot]; #original_title, clean_title + plot
