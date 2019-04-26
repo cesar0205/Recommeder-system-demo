@@ -25,6 +25,8 @@ and their display frequencies change depending on the state of the model.
 #### -Framework details.
 
 This engine is written in Python, Scikit-Learn on top of NumPy and SciPy stack. It uses Django for webserver backend.
+The ratings used as base for the recommender system were retrieved from the movielens dataset [https://grouplens.org/datasets/movielens/100k/] and then
+transformed into a n_users x n_movies matrix.
 
 ## Screenshots
 
